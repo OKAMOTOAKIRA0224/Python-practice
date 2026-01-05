@@ -47,3 +47,24 @@ lasts=["岡本","佐藤","田中"]
 firsts=["明","拓哉","太郎"]
 for a,b in zip(lasts,firsts):
     print(a+b)
+
+#6.下記リストを用意し、要素とそのインデックスを取得したうえで「xx番のyyです。」と出力せよ。
+#例：０番の岡本です。
+lasts=["岡本","佐藤","田中"]
+for i,last in enumerate(lasts):
+    print(f"{i}番の{last}です。")
+
+#7.以下の二つのパターンで０から９未満の２の倍数が入ったリスト([0,2,4,6,8])を作成しましょう。
+#・空のリストnumsをあらかじめ用意しforループ内で.append()関数を用いて要素を追加する。
+#・１行で同様のリストnumbersを作成する。
+
+nums=[]
+for i in range(9):
+    if i%2==0:
+     nums.append(i) 
+    else:
+        continue
+print(nums)
+
+numbers=[2*i for i in range(5)]
+print(numbers)
